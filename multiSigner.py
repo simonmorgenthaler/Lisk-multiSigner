@@ -1,5 +1,16 @@
 #!/usr/bin/python
 
+####################################################################################################################
+# File name: multiSigner.py                                                                                        #
+# Author: cc001                                                                                                    #
+# Last modified: 2017-04-16                                                                                        #
+#                                                                                                                  #
+# This script is used to automatically sign multiple pending multisig-transactions in a specific account.          #
+# Adapt NODE, PUBKEY, SECRET to your needs before using the script.                                                #
+#                                                                                                                  #
+# If you like and use this script, please vote for 'cc001' 6787154358850114730L as Delegate Lisk mainnet, Thanks!  #
+####################################################################################################################
+
 import json
 import requests
 from sys import version_info
