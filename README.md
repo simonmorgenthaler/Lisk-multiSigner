@@ -2,6 +2,8 @@
 This script is used to automatically sign multiple pending multisig-transactions in a specific account.
 After executing it, it will list the pending multisig transactions in this account and will ask you if you want to sign all these transactions in one batch.
 
+### Screenshot
+![Screenshot](screenshot.png?raw=true "Screenshot")
 
 ## Installation
 
