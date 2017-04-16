@@ -26,7 +26,7 @@ Open the file with a text editor and adapt the following three variables:
 ### NODE
 Enter here the url of the node you want to use to sign your transactions. It is recommended to use your own node, or only a node you really trust
 ### PUBKEY
-Entere here the publickey of the account which holds the multisign transactions. This is not the publickey of your own account.
+Enter here the publickey of the account which holds the multisign transactions. This is not the publickey of your own account.
 ### SECRET
 Enter here your secret to sign the multisig transactions. This is the secret of your own account.
 
