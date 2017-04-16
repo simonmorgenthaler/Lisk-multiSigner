@@ -64,7 +64,7 @@ def postServer(query, payload):
 
     
 def getPendingMultisigTransactions():
-    transactions = []
+    transactions = None
     query = NODE + "/api/multisignatures/pending?publicKey=" + PUBKEY 
     answer = getAnswer(query)
     if answer and 'success' in answer and answer['success']:
@@ -84,7 +84,10 @@ if NODE == "https://my.node.io" or PUBKEY == "CHANGE_ME" or SECRET == "CHANGE_ME
 
 transactions = getPendingMultisigTransactions()
 
-if not transactions:
+if transactions == None:
+    print ERROR + "ERROR:\nNo valid NODE ("+NODE+") or\nNo valid PUBKEY ("+PUBKEY+")" + STANDARD
+    exit(1)
+if len(transactions) == 0:
     print "No pending multisig transactions"
     exit(1)
 
