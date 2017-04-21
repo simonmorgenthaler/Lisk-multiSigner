@@ -104,7 +104,9 @@ for transaction in transactions:
     
     txId = transaction['transaction']['id']
     sender = transaction['transaction']['senderId']
-    recipient = transaction['transaction']['recipientId']
+    recipient = "-"
+    if 'recipientId' in transaction['transaction']:
+        recipient = transaction['transaction']['recipientId']
     nmbrSignatures = len(transaction['transaction']['signatures'])
     neededSignatures = transaction['min']
     amount = float(transaction['transaction']['amount']) / SATOSHI
